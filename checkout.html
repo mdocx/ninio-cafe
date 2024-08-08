@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Niño's Coffee Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Checkout</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Order Summary</h2>
+        <ul id="orderSummary"></ul>
+        <p><strong>Total:</strong> $<span id="totalAmount">0.00</span></p>
+        
+        <h3>Payment Method</h3>
+        <form id="paymentForm">
+            <label>
+                <img src="card.png">
+            
+                <input type="radio" name="paymentMethod" value="Credit Card" required>
+                Credit Card
+            </label><br>
+            <label>
+                <img src="paypal.png">
+                <input type="radio" name="paymentMethod" value="PayPal" required>
+                PayPal
+            </label><br>
+            <label>
+                <img src="gcash.png">
+                <input type="radio" name="paymentMethod" value="Cash" required>
+                GCash
+            </label><br><br>
+            <button type="submit" class="checkout-button">Confirm Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Niño's Coffee Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+       
+</body>
+</html>

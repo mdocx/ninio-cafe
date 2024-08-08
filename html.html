@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niño's Coffee Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Niño's Coffee Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Us</h2>
+            <p>At Niño's Coffee Shop, we serve the finest coffee in town. Come in for a relaxing experience and enjoy our wide variety of coffee blends and pastries.</p>
+        </section>
+
+        <section id="menu" class="container">
+            <h2>Menu</h2>
+            <form id="menuForm">
+                <ul>
+                    <li>
+                        <label>
+                            <img src="espresso.png" alt="Espresso"><br>
+                            Espresso - $3.00
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-button" onclick="changeQuantity('espresso', -1)">-</button>
+                                <input type="number" id="espressoQty" name="espressoQty" value="0" readonly>
+                                <button type="button" class="quantity-button" onclick="changeQuantity('espresso', 1)">+</button>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <img src="latte.jpg" alt="Latte"><br>
+                            Latte - $4.00
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-button" onclick="changeQuantity('latte', -1)">-</button>
+                                <input type="number" id="latteQty" name="latteQty" value="0" readonly>
+                                <button type="button" class="quantity-button" onclick="changeQuantity('latte', 1)">+</button>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <img src="cappu.jpg" alt="Cappuccino"><br>
+                            Cappuccino - $4.00
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-button" onclick="changeQuantity('cappuccino', -1)">-</button>
+                                <input type="number" id="cappuccinoQty" name="cappuccinoQty" value="0" readonly>
+                                <button type="button" class="quantity-button" onclick="changeQuantity('cappuccino', 1)">+</button>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <img src="americano.jpeg" alt="Americano"><br>
+                            Americano - $3.50
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-button" onclick="changeQuantity('americano', -1)">-</button>
+                                <input type="number" id="americanoQty" name="americanoQty" value="0" readonly>
+                                <button type="button" class="quantity-button" onclick="changeQuantity('americano', 1)">+</button>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <img src="mocha.png" alt="Mocha"><br>
+                            Mocha - $4.50
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-button" onclick="changeQuantity('mocha', -1)">-</button>
+                                <input type="number" id="mochaQty" name="mochaQty" value="0" readonly>
+                                <button type="button" class="quantity-button" onclick="changeQuantity('mocha', 1)">+</button>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <img src="past.jpg" alt="Pastry"><br>
+                            Pastries - $2.00 each
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-button" onclick="changeQuantity('pastry', -1)">-</button>
+                                <input type="number" id="pastryQty" name="pastryQty" value="0" readonly>
+                                <button type="button" class="quantity-button" onclick="changeQuantity('pastry', 1)">+</button>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+                <button type="button" class="checkout-button" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </form>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>Address: 123 Coffee St, Bean Town</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@nioscoffee.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Niño's Coffee Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
